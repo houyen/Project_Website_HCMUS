@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>21880128 - Ice-Cream - Menu</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Changa+One" type="text/css">
+    <link rel="stylesheet" href="css/21880128.css"> 
+    <!-- <link rel="stylesheet" href="css/banner.css"> -->
+</head>
+
+<body>
+<!--header-->
+    <header class="container">
+        <nav class="navbar navbar-expand-sm navbar-light px-0">
+            <a class="navbar-brand" href="index.html" id="logo">
+                <img src="images/logo.png" alt="Ice-Cream">
+            </a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="navbar-nav mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="index.html">Home   
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="about.html">About
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="menu.html">Menu
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">Contacts</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0" id="frm-search" onsubmit="return search(this.searchword.value);">
+                    <div class="input-group input-group-sm">
+                        <input class="form-control" type="text" placeholder="Search" id="searchword">
+                        <div class="input-group-append">
+                            <button class="btn" type="submit" id="btn-search"> </button>
+                        </div>
+                    </div>
+                </form>
+                <div id="social">
+                    <a href="#" class="btn twitter">
+                         </a>
+                    <a href="#" class="btn facebook">
+                         </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid" id="small-banner" >
+    </div>
+    <div id="content">
+        <div class="container">
+            <h3 class="text-dark"> Menu</h3>
+            <div class="font-weight-bold">Filter by category:</div>
+            <ul class="nav justify-content-left" id="gallery-categories">
+                <!-- <li class="nav-item">
+                    <a class="nav-link pl-0" href="#" onclick="loadGallery(this, 'all');">Show all</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" onclick="loadGallery(this, 18)">First Category</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="loadGallery(this, 19)">Second Category</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="loadGallery(this, 20)">Third Category</a>
+                </li> -->
+            </ul>
+            <!--picture-->
+            <div class="row" id="gallery">
+                <!-- <div class="col-sm-6 col-md-4 col-lg-3">
+                   <a href="#" onclick="loadGalleryByCategory(21)"> <img class="img-thumbnail" src="images/gallery/gallery-img1.jpg" alt=""></a>
+                </div> 
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" onclick="loadGalleryByCategory(22)"> <img class="img-thumbnail" src="images/gallery/gallery-img2.jpg" alt=""></a>
+                 </div>
+                 <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" onclick="loadGalleryByCategory(23)"> <img class="img-thumbnail" src="images/gallery/gallery-img3.jpg" alt=""></a>
+                 </div>
+                 <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" onclick="loadGalleryByCategory(24)"> <img class="img-thumbnail" src="images/gallery/gallery-img4.jpg" alt=""></a>
+                 </div>
+                 <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" onclick="loadGalleryByCategory(25)"> <img class="img-thumbnail" src="images/gallery/gallery-img5.jpg" alt=""></a>
+                 </div>
+                 <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" onclick="loadGalleryByCategory(26)"> <img class="img-thumbnail" src="images/gallery/gallery-img6.jpg" alt=""></a>
+                 </div>
+                 <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" onclick="loadGalleryByCategory(27)"> <img class="img-thumbnail" src="images/gallery/gallery-img7.jpg" alt=""></a>
+                 </div>
+                 <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" onclick="loadGalleryByCategory(28)"> <img class="img-thumbnail" src="images/gallery/gallery-img8.jpg" alt=""></a>
+                 </div>
+                 <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" onclick="loadGalleryByCategory(29)"> <img class="img-thumbnail" src="images/gallery/gallery-img9.jpg" alt=""></a>
+                 </div>
+                 <div class="col-sm-6 col-md-4 col-lg-3">
+                    <a href="#" onclick="loadGalleryByCategory(30)"> <img class="img-thumbnail" src="images/gallery/gallery-img10.jpg" alt=""></a>
+                 </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- footer-->
+    <footer class="container-fluid">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li >
+                    <a href="about.html">About</a>
+                </li>
+                <li class="active">
+                    <a href="menu.html">Menu</a>
+                </li>
+                <li>
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            Ice-cream &copy; 2022 |
+            <a href="#" class="text-uppercase">Privacy policy</a>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/handlebars.runtime-v4.1.0.js"></script>
+    <script src="js/handlebars-v4.1.0.js"></script>
+    
+    <script src="js/21880128.js"></script>
+
+    <script id="gallery-categories-template" type="text/x-handlebars-template">
+        <li class="nav-item">
+            <a class="nav-link disabled pl-0" href="#" onclick="loadGallery(this)">Show all</a>
+        </li>
+        {{#each data}}
+        <li class="nav-item">
+            <a class="nav-link" href="#" onclick="loadGallery(this,{{id}})">{{name}}</a>
+        </li>
+        {{/each}}
+    </script>
+
+    <script id="gallery-template" type="text/x-handlebars-template">
+        {{#each data}}
+        <div class="col-sm-6 col-md-4 col-lg-3">
+            <a href="#" onclick="loadData('gallery/{{id}}','#content','#details-template');"> <img class="img-thumbnail" src="{{imagepath}}" alt=""></a>
+        </div> 
+        {{/each}}
+    </script>
+
+    <script id="details-template" type="text/x-handlebars-template">
+        {{#each data}}
+        <div class="container py-5 mb-5">
+            <h3 class="text-dark">{{name}}</h3>
+            <div> 
+                <img src="{{imagepath}}" alt="" class="round-img pull-left">
+                {{{description}}}
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <script>
+        $(document).ready(function () {
+            loadData('gallery-categories','#gallery-categories','#gallery-categories-template');
+            loadData('gallery','#gallery','#gallery-template');
+            //loadData('gallery/{{id}}','#content','#details-template');
+        })
+
+        function loadGallery(link,id){
+            if (id) {
+                loadData(`gallery/categories/${id}`,'#gallery','#gallery-template');
+            }
+            else {
+                loadData('gallery','#gallery','#gallery-template');
+            }
+            $('#gallery-categories .nav-link').removeClass('disabled');
+            $(link).addClass('disabled');
+        }
+    </script>
+</body>
+</html>
+
